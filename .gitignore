@@ -1,0 +1,4 @@
+.vscode/settings.json
+src/*.d
+src/*.o
+area/evren
