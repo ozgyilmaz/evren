@@ -1865,7 +1865,7 @@ void nanny( DESCRIPTOR_DATA *d, char *argument )
 	}
  
 
-	if (ch->pcdata->pwd[0] == '\0')
+	if ( ch->pcdata->pwd[0] == '\0')
 	{
 	    write_to_buffer( d, "Warning! Null password!\n\r",0 );
 	    write_to_buffer( d, "Please report old password with bug.\n\r",0);
@@ -2195,9 +2195,9 @@ void nanny( DESCRIPTOR_DATA *d, char *argument )
 	}
 
     if (IS_NPC(ch))
-		ch->pIndexData->race = race;
+    ch->pIndexData->race = race;
 	else
-		ch->pcdata->race = race;
+    ch->pcdata->race = race;
 	RACE(ch) = race;
 	for (i=0; i < MAX_STATS;i++)
 	      ch->mod_stat[i] = 0;
@@ -3054,8 +3054,9 @@ void show_string(struct descriptor_data *d, char *input)
 	{
 	    *scan = '\0';
 	    write_to_buffer(d,buffer,strlen(buffer));
-	    for (chk = d->showstr_point; isspace(*chk); chk++)
-	    {
+	    for (chk = d->showstr_point; isspace(*chk); chk++) {
+		}
+
 		if (!*chk)
 		{
 		    if (d->showstr_head)
@@ -3064,8 +3065,7 @@ void show_string(struct descriptor_data *d, char *input)
             		d->showstr_head = 0;
         	    }
         	    d->showstr_point  = 0;
-    		}
-	    }
+    	}
 	    return;
 	}
     }

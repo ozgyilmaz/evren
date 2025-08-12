@@ -2,3 +2,5 @@
 src/*.d
 src/*.o
 area/evren
+src/evren
+player/*
