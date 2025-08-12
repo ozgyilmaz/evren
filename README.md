@@ -1,29 +1,38 @@
-# Anatolia-Mud
-REALMS OF ANATOLIA - Original Anatolia Mud 3.0
+# Evren MUD
 
-Official website: https://anatoliamud.sourceforge.net/
+Evren MUD is a text-based multiplayer online role-playing game built on the **DikuMUD → Merc → ROM → Anatolia 3.0** codebase.  
+The project aims to bring the nostalgic Anatolia 3.0 code up to date for modern compilers and continue its legacy with new content over time.
 
-This is the ANATOLIA 3.0 version of Rom 2.4 base code. Please read
-the file in Anatolia/doc called anatolia.license before using this program.
+---
 
-Some notes about ANATOLIA code:
+## 📜 Overview
 
-The file anatolia.credits contains some contributions to the code.
+- **Base:** Anatolia 3.0 (ROM MUD derivative)
+- **Language:** C
+- **Status:** Early stage (Anatolia 3.0 code adapted for GCC 11.4 with zero warnings or errors)
+- **Platform:** Linux (other POSIX-compatible systems should work as well)
+- **License:** Inherits the original Anatolia 3.0 license terms
 
-So many things changed from Rom2.4. And the MUD become a Roleplaying,  
-Playerkilling and Adventure MUD. Therefore during implementing you may come
-across problems, e.g. you should choose your immortals more carefully.
+---
 
-Please read the WHATSNEW and FROMXXTOYY files, for more information.
+## 🚀 Features
 
-Before adding any new code to the mud, make sure that you understood the
-source structure of Anatolia MUD very well. You may cause serious BUGS!
+- **Full GCC 11.4 compatibility**: Clean compile without warnings.
+- **Classic Anatolia 3.0 mechanics**: All original commands, spells, races, and classes are intact.
+- **Authentic MUD feel**: Telnet connection, ANSI color support etc.
 
-If you have any questions, you can ask us at:
-	bulut@scf.usc.edu
-	canpunar@rorqual.cc.metu.edu.tr
+---
 
-ANATOLIA 3.0 is ready to work, NOW! Just make it!
+## 🛠️ Compilation & Setup
 
--- Serdar BULUT
--- Ibrahim CANPUNAR 
+### Requirements
+- Linux or POSIX-compatible OS
+- `gcc` 11.4 or newer
+- `make`
+- `libcrypt` library (usually included by default on Linux systems)
+
+### Build
+```bash
+git clone https://github.com/username/evren-mud.git
+cd evren-mud/src
+make

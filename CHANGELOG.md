@@ -6,3 +6,6 @@
 
 ## 12.08.2025
 - BUGFIX: Show String bug fixed.
+
+## 13.08.2025
+- Old files archived, README updated.
